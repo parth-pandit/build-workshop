@@ -2,7 +2,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![Apache 2.0 License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![LinkedIn][linkedin-shield]][linkedin-url2]
 
@@ -12,22 +12,23 @@
 <br />
 <p align="center">
   <a href="https://github.com/rhardt-pivotal/build-workshop">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/tanzu-bug.svg" width=80 height=80 alt="Logo" >
   </a>
 
   <h3 align="center">Tanzu Build Workshop</h3>
 
-  <p align="center">
-    YOUR_SHORT_DESCRIPTION
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+  <p>
+    This is a comprehensive workshop covering the creation of a professional, reliable and secure deployable artifact and Kubernetes deployment for your Java Spring application.  This workshop will take you from a simple naive Dockerfile, eventually arriving at a secure, modular, streamlined, and up-to-date deployable OCI-compliant image and Kubernetes deployment.  This is based on <a href="https://adibsaikali.com/" target="adib">Adib Saikali's</a> excellent QCon Plus session <i>Effective Spring + Kubernetes</i>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/rhardt-pivotal/build-workshop/"><strong>Start Here »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/rhardt-pivotal/build-workshop">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/rhardt-pivotal/build-workshop/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/rhardt-pivotal/build-workshop/issues">Request Feature</a>
   </p>
 </p>
 
@@ -36,13 +37,37 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
+* [Introduction](#intro)
+* [Intended Audience](#audience)
+* [Prerequisite Skills](#prerequisite-skills)
+* [Required Tools](#required-tools)
+* [Environment](#environment)
+* [Validate Tools and Environment](workshop/0010-validate-tools-and-environment/README.md)
+* [Build Workshop](workshop/00-validate-tools-and-environment.md)
+  * Part 1: Setup and Java Runtimes
+    * [Validate Tools and Environment](workshop/0010-validate-tools-and-environment/README.md)
+    * [A Simple Naïve JDK Image From Scratch](workshop/0020-simple-naive-image-from-scratch/README.md)
+    * [Java Base Images](workshop/0030-java-base-images/README.md)
+    * [Java Versions](workshop/0040-java-versions/README.md)
+  * Part 2: Application Images with Docker
+    * [Single-Layer Spring Boot App](workshop/0050-single-layer-java-app/README.md)
+    * [Multi-Layer Spring Boot App](workshop/0060-multi-layer-java-app/README.md)
+    * [Spring Boot LayerTools](workshop/0070-layertools/README.md)
+  * Part 3: Cloud Native Buildpacks
+    * [Local Buildpacks](workshop/0080-local-buildpacks/README.md) <!-- ideally we do it with the pack CLI and the maven task -->
+    * [On-Platform Buildpacks - KPack ](workshop/0090-on-platform-buildpacks-kpack/README.md)
+    * [On-Platform Buildpacks - Tanzu Build Service ](workshop/0095-on-platform-buildpacks-tbs/README.md)
+  * Part 4: K8s Cluster Provisioning
+    * [K8s-the-hard-way](workshop/0100-k8s-the-hard-way/README.md)
+    * [K8s-the-easy-way](workshop/0110-k8s-the-easy-way/README.md)
+  * Part 5: Deploying to Kubernetes
+    * [Spring Boot Features for Kubernetes](workshop/0120-spring-boot-features-for-kubernetes/README.md)
+    * [Spring Cloud Kubernetes](workshop/0130-spring-cloud-kubernetes/README.md)
+  * Part 6: Optimizing JVM Settings for Containers
+    * [Available Processors](workshop/0140-available-processors/README.md)
+    * [CPU Requests and Limits](workshop/0150-cpu-ram-requests-and-limits/README.md)
+  * Part 7: 
+    * [Wrap Up](workshop/0160-wrapup/README.md)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -51,62 +76,23 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Intro
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
-
-
-### Built With
-
-* []()
-* []()
-* []()
+[![Build Workshop Screen Shot][product-screenshot]](https://github.com/rhardt-pivotal/build-workshop)
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+## Audience
+the audience
 
-To get a local copy up and running follow these simple steps.
+## Prerequisite Skills
+your skillz
 
-### Prerequisites
+## Required Tools
+tour toolz
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-```sh
-npm install npm@latest -g
-```
-
-### Installation
-
-1. Clone the repo
-```sh
-git clone https://github.com/github_username/repo_name.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+## Environment
+the working environment (K8s, Harbor, Dex, etc.)
 
 
 
@@ -126,25 +112,25 @@ Contributions are what make the open source community such an amazing place to b
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the Apache 2.0 License. See `LICENSE` for more information.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Rob Hardt - 
+  * Rob Hardt: rhardt -at- vmware.com
+  * Parth Pandit: panditpa -at- vmware.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/rhardt-pivotal/build-workshop](https://github.com/rhardt-pivotal/build-workshop)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* [Adib Saikali](https://adibsaikali.com/)
+* [Best README Template](https://github.com/othneildrew/Best-README-Template)
 
 
 

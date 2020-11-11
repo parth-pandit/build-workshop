@@ -1,0 +1,1 @@
+maybe just demo some docker one-liners to show the OpenJDK 1.8 license vs. AdoptOpenJDK
